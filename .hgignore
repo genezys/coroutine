@@ -1,0 +1,12 @@
+syntax: glob
+*.dsw
+*.ncb
+*.opt
+*.plg
+*.exe
+*.ilk
+*.pch
+*.pdb
+*.obj
+vc60.idb
+vc60.pdb
