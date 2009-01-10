@@ -1,6 +1,12 @@
 #ifndef COROUTINE_FIBER_INCLUDED
 #define COROUTINE_FIBER_INCLUDED
 
+#ifdef WIN32
+#	define STDCALL __stdcall
+#else
+#	define STDCALL
+#endif
+
 namespace coroutine {
 
 class Fiber
@@ -21,10 +27,10 @@ protected:
 
 private:
 	class FiberMain;
-	friend FiberMain;
+	friend class FiberMain;
 
 private:
-	static void __stdcall proc(void* pParam);
+	static void STDCALL proc(void* pParam);
 	void* m_pFiber;
 
 private:
