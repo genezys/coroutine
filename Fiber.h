@@ -29,9 +29,12 @@ private:
 	class FiberMain;
 	friend class FiberMain;
 
-private:
+protected:
 	static void STDCALL proc(void* pParam);
 	void* m_pFiber;
+    
+protected: 
+    Fiber(int); // This constructor does no initialization at all
 
 private:
 	void deleteFiber();

@@ -8,5 +8,7 @@ syntax: glob
 *.pch
 *.pdb
 *.obj
+*.o
+coroutine
 vc60.idb
 vc60.pdb
