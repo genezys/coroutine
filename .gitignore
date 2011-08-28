@@ -1,3 +1,4 @@
 *.o
 *.xcodeproj
 BasicPosix
+.DS_Store
