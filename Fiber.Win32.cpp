@@ -77,4 +77,5 @@ void Fiber::deleteFiber()
 	}
 }
 
-} // namespace coroutine
+} // namespace coroutine} // namespace coroutine
+
