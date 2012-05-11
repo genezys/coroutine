@@ -5,7 +5,7 @@
 
 void runChild(char* param)
 {
-	printf("0x%08x\n", param);
+	printf("0x%08lx\n", (long)param);
 }
 
 int main()
